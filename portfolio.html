@@ -1,0 +1,442 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Portfolio</title>
+        <style>
+            body
+            {
+                background: linear-gradient(100deg , #000000, #2E26A1);
+                
+                margin: 0;
+                padding: 0;
+                
+                
+                
+                font-family: Arial, sans-serif;
+                color: white;
+
+            }
+
+            header {
+                
+                color: #fff;
+                padding: 15px 10px;
+            }
+        
+            .topnav {
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                padding: 0 20px;
+            }
+        
+            .website-name a {
+                color: #fff;
+                text-decoration: none;
+                font-size: 24px;
+                font-weight: bold;
+            }
+        
+            .nav-links {
+                flex: 1;
+            }
+        
+            .nav-links ul {
+                list-style-type: none;
+                margin: 0;
+                padding: 0;
+                display: flex;
+                justify-content: flex-end;
+            }
+        
+            .nav-links ul li {
+                margin-left: 20px;
+            }
+        
+            .nav-links a {
+                color: #fff;
+                text-decoration: none;
+                padding: 14px 20px;
+                display: inline-block;
+            }
+
+            .nav-links a:hover {
+                color:#C9EF02; 
+            }
+
+            .hero{
+                text-align: center;
+                display: flex;
+                }
+                .text{
+                    flex: 1;
+                    text-align: left;
+                    padding: 20px;
+                    margin-left: 110px;
+                }
+                .download-button{
+                    display: inline-block;
+                    color: #000000; 
+                    background-color: #C9EF02; 
+                    padding: 10px 30px;
+                    font-size: 15px;
+                    text-decoration: none; 
+                    margin:  37px;
+                    border: none;
+                    border-radius: 13px;
+                    transition-duration: 0.4s;
+                    cursor: pointer;
+                    
+                    
+                }
+
+                .download-button :hover{
+                    background-color: #000000;
+                    color: #ffffff;
+                    border:2px solid #C9EF02
+                    
+                }
+
+                .hero img{
+                    margin-right: 300px;
+                    text-align: left;
+                    margin-top: -60px;
+                    border: #C9EF02 solid;
+                    border-radius:100%;
+                    border-width: 10px;
+                    
+                    
+                    
+                    
+                }
+                
+
+                
+
+            .about{
+                
+                display: flex;
+                }
+                .about img{
+                    margin-top: 150px;
+                    width: 100%;
+                    height: 500px;
+                    
+
+                }
+                .about text{
+                   
+                    
+                    
+                } 
+                .about p{
+                    margin-left: -230px;
+                    font-size: 25px;
+                    padding: 5px;
+                    
+                }
+
+
+            .Services{
+                text-align: center;
+                
+                    }
+
+                .services-container {
+                    display: flex;
+                    gap: 0px;
+                    margin-left: 250px;
+                    margin-top: 150px;
+                    }
+
+                .service {
+                    margin-left: 30px;
+                    background: linear-gradient(500deg, #2E2F58,#4c57ac);
+                    border-radius: 20px;
+                    padding: 40px 35px;
+                    width: 220px;
+                    text-align: center;
+                    height: 270px;
+                    }
+
+                .service img{
+                    width: 40px;
+                    height: 40px;
+                    margin-top: -24px;
+                    }    
+
+                .service h3 {
+                    margin-top: 35px;
+                    }
+
+                .service p {
+                    font-size: 14px;
+                    
+                    
+                    }
+
+                .service button {
+                    background-color: #C9EF02;
+                    border: none;
+                    border-radius: 10px;
+                    padding: 10px;
+                    cursor: pointer;
+                    font-size: 16px;
+                    margin-top: 22px;
+                    }
+                    
+
+
+
+            .contact-page{
+                text-align: center;
+                
+            }
+            .contacts{
+                
+                text-align: center;
+                
+                } 
+                #location{
+                    display: flex;
+                    text-align:left;
+                    height: 30px;
+                    width: 50px;
+                }
+                .Licon{
+                    width: 60px;
+                    height: 60px;
+                    margin-left: 150px;
+                    margin-top: 120px;
+                }
+                #location p{
+                    margin-left: 20px;
+                    margin-top: 115px;
+                    font-size: 30px;
+                }
+                #email{
+                    width: 60px;
+                    height: 60px;
+                    margin-left: 150px;
+                    margin-top: 120px;
+                }
+                .Micon{
+                    width: 60px;
+                    height: 60px;
+                    margin-top: 100px;
+                }
+                #email p{
+                    margin-left: 80px;
+                    margin-top: -70px;
+                    font-size: 30px;
+                }
+                #call{
+                    width: 60px;
+                    height: 60px;
+                    margin-left: 150px;
+                    margin-top: 60px;
+                }
+                .Cicon{
+                    width: 60px;
+                    height: 60px;
+                    margin-top: 100px;
+                }
+                #call p{
+                    margin-left: 80px;
+                    margin-top: -70px;
+                    font-size: 30px;
+                }
+
+                #form{
+                    height: 530px;
+                    width:550px;
+                    text-align: center;
+                    border: #C9EF02 solid;
+                    border-radius: 15px;
+                    border-width: 4px;
+                    margin-left: 780px;
+                    margin-top: -290px;
+                    background-color: none;
+                    margin-bottom: 30px;
+                    
+                } 
+                .contct{
+                    text-align: left
+                    
+                } 
+                .feild{
+                    padding: 10px ;
+                    width: 80%;
+                    margin-top: 35px;
+                    margin-left: 40px;
+                    border:#ffffff;
+                    background-color:rgb(215, 215, 215);
+                    border-radius: 10px   
+                }
+                .sub{
+                    background-color: #C9EF02;
+                    padding: 10px 30px;
+                    margin:  37px;
+                    border-radius: 7px;
+
+                }
+                .footer {
+                    margin-top: -16px;
+                    
+                    background-color: #494A8B;
+                    border-top-left-radius: 50px;
+                    border-top-right-radius: 50px;
+                    
+                }
+        </style>
+    </head>
+    <body>
+                                                             <!-- Navbar -->
+        <header>
+            
+            <div class="topnav">
+                <div class="website-name">
+                    <a href="#home">Portfolio</a>
+                </div>
+                
+                <div class="nav-links">
+                    <ul>
+                        <li><a href="#home" class="active">Home</a></li>
+                        <li><a href="#About">About</a></li>
+                        <li><a href="#Services">Services</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </div>
+            </div>
+        </header>
+        <br><br><br><br><br><br><br><br><br>
+
+                                                                          <!--home page-->   
+        <section class="hero">
+            
+            <div class="text">
+            <p style="padding: 0px 25px; font-size: 20px;"><b>Hi, it's me <br><br> <span style="font-size: 35px;">Mohamed Abdelkawy</span> <br><br> And i'm a <span style="color: #C9EF02;">Full-Stack Developer</span></p>
+            <br><br><br>
+            <a class="download-button" href="#CV link"><b>Download CV</b></a> 
+            </div>
+            
+            <div class="img">
+                <img src="mens-hair-cut-removebg-preview.png" alt="personal picture">
+
+            </div>
+        </section>
+        <br><br><br><br><br><br><br><br><br><hr>
+       
+                                                                         <!-- about page-->
+        <section class="about">
+            <br>
+            <div class="image">
+            <img src="https://vandedigital.com/wp-content/uploads/2023/07/Black-Blue-and-Gold-Modern-Desktop-Wallpaper-2048x1152.png" alt="" width="800" height="450">    
+            </div>
+
+           <div class="text">
+            <p style=" font-size: 55px; margin-top: 140px;"><b>About <span style="color: #C9EF02;  " > Me </span></b> <br> 
+                <span style="color: #C9EF02; font-size: 35px; ;"><b>Full-Stack Developer</b></span>
+            </p> 
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                sed doeiusmod tempor incididunt ut labore et dolorema
+                gna aliqua.Utenimad minim veniam, quis nostrud exerci
+                tation ullamco laboris nisi utad minim veniam,
+                quis nostrud exercitation ullamco laboris nisi ut aliquip 
+                ex ea commodo consequat. Duis aute irure dolor 
+                inreprehenderit in voluptate velit esse cillum dolore eu 
+                fugiat nullapariatur. Excepteur sint occaecat cupidatat 
+                non proident, sunt in culpaqui officia deserunt mollit 
+                anim id est laborum.</p>
+            </div>
+        </section>
+        <br><br><br><br><br><br><hr><br><br><br><br><br>
+        
+                                                                    <!--services page-->     
+        <section class="Services">
+            <h1 style="font-size: 50px; margin-top: -5px;">Services</h1>
+            <div class="services-container">
+                <div class="service">
+                    <img src="brush-removebg-preview.png" alt="ui-ux icon picture" >
+                    <h3>UI-UX Designer</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation</p>
+                    <button>Read More</button>
+                </div>
+                <div class="service">
+                    <img src="slash-removebg-preview.png" alt="web icon picture" >
+                    <h3>Web Development</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation</p>
+                    <button>Read More</button>
+                </div>
+                <div class="service">
+                    <img src="android-removebg-preview.png" alt="android icon picture" >
+                    <h3>Android Development</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation</p>
+                    <button>Read More</button>
+                </div>
+            </div>
+        </section>
+        <br><br><br><br><br><br><br><hr>
+        
+                                                                       <!--contact page-->    
+        <section class="contact-page">
+            <p style="font-size: 50px;"><b>Contact <span style="color: #C9EF02;">Me</span></b></p>
+            
+            <div class="contacts">
+
+                <div class="left-side">
+                    <div id="location"> 
+                        <img class="Licon" src="circle.png" alt="location icon picture"> 
+                        <p><b>Location</b><br> <span style="color: #C9EF02;font-size: 15px;">Cairo, Egypt</span> </p>
+                    </div>
+                    <div id="email">
+                        <img class="Micon" src="email.png" alt="Email icon picture"> 
+                        <p><b>Email</b><br> <span style="color: #C9EF02;font-size: 15px;">email@gmail.com</span> </p>
+
+                    </div>
+                    <div id="call">
+                        <img class="Cicon" src="call.png" alt="call icon picture"> 
+                        <p><b>Call</b><br> <span style="color: #C9EF02;font-size: 15px;">01000000000</span> </p>
+
+                    </div>
+
+                </div>
+                
+                <div id="form">
+                    <form name="contact-form">
+                        <div class="contct">
+                            <input class="feild" name="name" placeholder="Name" ><br>
+                            <input class="feild" type="email" name="email" placeholder="Email" ><br>
+                            <input class="feild" type="text" name="subject" placeholder="Subject"><br>
+                            <textarea class="feild" name="message" id="" cols="30" rows="10" placeholder="Message" ></textarea><br>
+                            <input class="sub" type="submit" >
+                        </div>
+                    </form>
+                </div>
+            </div>
+
+        </section>
+        <br><hr>
+       
+                                                                              <!-- footer --> 
+
+        <footer class="footer">
+            
+            <p style="padding: 40px 90px; font-size: 18px;"><b> Mohamed Abdelkawy </b>
+            <span style="margin-left: 300px;"><b>Links</b></span>         
+            <span style="margin-left: 300px; "><b>Social Media</b></span>
+            <br><br><span style="margin-left: 490px; font-size: 14px; ">Home</span>
+            <a href="facebook.com" style="margin-left: 308px;">Facebook</a>
+            <br><span style="margin-left: 490px; font-size: 14px; ">About</span>
+            <a href="linkedin.com" style="margin-left: 308px;">Linkedin</a>
+            <br><span style="margin-left: 490px; font-size: 14px; ">Services</span>
+            <a href="behance.com" style="margin-left: 291px;">Behance</a>
+            <br><span style="margin-left: 490px; font-size: 14px; ">Contact</span>
+            <a href="x.com" style="margin-left: 296px;">X</a> 
+            </p><br>
+            
+        </footer>
+    </body>
+</html>
